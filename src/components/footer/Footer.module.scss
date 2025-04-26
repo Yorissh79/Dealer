@@ -1,0 +1,179 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5em;
+        gap: 90px;
+        height: 100%;
+
+        .f {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 293px;
+
+            .par {
+                font-size: 1.2rem;
+                color: #000;
+                margin-bottom: 1.5rem !important;
+                font-weight: 500;
+            }
+
+            .long {
+                color: grey;
+                width: 255px;
+            }
+
+            .input {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input {
+                    width: 255px;
+                    height: 50px;   
+                    border-radius: 4px;
+                    border: 1px solid hsla(0, 7%, 36%, 0.253);
+                    padding-left: 10px;
+                    font-size: 16px;
+                }
+
+                button {
+                    position: absolute;
+                    right: 4px;
+                    width: 80px;
+                    height: 43px;
+                    background-color: #207DFF;
+                    border: none;
+                    color: white;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    
+                    &:hover{
+                        background-color: #0a51b4;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+        }
+
+        .s {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 293px;
+
+            .par {
+                font-size: 1.2rem;
+                color: #000;
+                margin-bottom: 1.5rem !important;
+                font-weight: 500;
+            }
+
+            .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+            }
+        }
+
+        .t {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 293px;
+
+            .paraq {
+                font-size: 1.2rem;
+                color: #000;
+                margin-bottom: 1.5rem !important;
+                font-weight: 500;
+            }
+
+            .div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .ls {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+
+    }
+
+    .bottom {
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 1000px){
+
+    .main {
+
+        .top {
+            flex-direction: column;
+            width: 100%;
+
+            .f {
+                width: 90%;
+
+                .input {
+                    width: 100%;
+                    
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .s {
+                width: 90%;
+                height: 240px;
+            }
+
+            .t {
+                width: 90%;
+                height: 240px;
+            }
+        }
+
+        .bottom {
+            text-align: center;
+            width: 95%;
+        }
+
+
+    }
+
+}

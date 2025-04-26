@@ -1,0 +1,68 @@
+.main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 100%;
+
+    .p {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68%;
+        overflow: hidden;
+        height: 600px;
+        position: relative;
+
+        .center {
+            gap: 30px;
+            transition: 0.5s;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 90%;
+            width: 2500px;
+            position: absolute;
+            left: 0px;
+        }
+    }
+
+    .right {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        right: 0px;
+        cursor: pointer;
+    }
+
+    .left {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        left: 0px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 1000px){
+
+    .main {
+
+        .cards {
+            width: 90%;
+
+            .center {
+                width: 2350px;
+            }
+        }
+    }
+
+}

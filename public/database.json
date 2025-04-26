@@ -1,0 +1,50 @@
+[
+    {
+        "name"  : "The Shoe",
+        "price" : "9.50",
+        "des"   : "Summer Collection",
+        "dis"   : "",
+        "image" : "https://preview.colorlib.com/theme/dealers/images/product_1.jpg",
+        "sale"  : "false"
+    },
+    {
+        "name"  : "Marc Jacobs Bag",
+        "price" : "9.50",
+        "des"   : "Summer Collection",
+        "dis"   : "30.00",
+        "image" : "https://preview.colorlib.com/theme/dealers/images/product_2.jpg",
+        "sale"  : "true"
+    },
+    {
+        "name"  : "The Belt",
+        "price" : "9.50",
+        "des"   : "Summer Collection",
+        "dis"   : "",
+        "image" : "https://preview.colorlib.com/theme/dealers/images/product_3.jpg",
+        "sale"  : "false"
+    },
+    {
+        "name"  : "The Shoe",
+        "price" : "9.50",
+        "des"   : "Summer Collection",
+        "dis"   : "",
+        "image" : "https://preview.colorlib.com/theme/dealers/images/product_1.jpg",
+        "sale"  : "false"
+    },
+    {
+        "name"  : "Marc Jacobs Bag",
+        "price" : "9.50",
+        "des"   : "Summer Collection",
+        "dis"   : "30.00",
+        "image" : "https://preview.colorlib.com/theme/dealers/images/product_2.jpg",
+        "sale"  : "true"
+    },
+    {
+        "name"  : "The Belt",
+        "price" : "9.50",
+        "des"   : "Summer Collection",
+        "dis"   : "",
+        "image" : "https://preview.colorlib.com/theme/dealers/images/product_3.jpg",
+        "sale"  : "false"
+    }
+]

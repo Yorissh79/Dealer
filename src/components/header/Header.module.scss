@@ -1,0 +1,164 @@
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+    .logo {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+    }
+
+    .center {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .pages {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                }
+            }
+
+            .col {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                &:hover {
+                    .subf {
+                        transition: opacity 0.5s ease, visibility 0.5s ease;
+                        opacity: 1;
+                        visibility: 1;
+                        transform: translate(20px, 90px);
+                    }
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #207dff;
+                }
+
+                .subf {
+                    transition: opacity 0.5s ease, visibility 0.5s ease;
+                    visibility: 0;
+                    opacity: 0;
+                    position: absolute;
+                    list-style: none;
+                    transform: translate(-1000px, -1000px);
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    width: 200px;
+                    padding-left: 20px;
+
+                    li {
+                        width: 100%;
+                        color: black;
+                        height: 40px;
+                    }
+
+                    .sub {
+
+
+                        &:hover {
+                            .subs {
+                                transition: opacity 0.5s ease, visibility 0.5s ease;
+                                opacity: 1;
+                                visibility: 1;
+                            }
+                        }
+
+                        .subs {
+                            transition: opacity 0.5s ease, visibility 0.5s ease;
+                            visibility: 0;
+                            opacity: 0;
+                            position: absolute;
+                            transform: translate(180px, -50px);
+                            list-style: none;
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            width: 200px;
+                            padding-left: 20px;
+
+                            li {
+                                width: 100%;
+                                color: black;
+                                height: 40px;
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+
+    }
+
+    .icons {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 1000px){
+    .main {
+        height: 42px;
+
+        .center {
+            display: none;
+            .pages {
+                display: none;
+            }
+        } 
+
+        .burger {
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 50%;
+        }
+
+        .icons {
+            gap: 5px;
+            width: 30%;
+        }
+    }
+}

@@ -13,11 +13,11 @@ export const router = createBrowserRouter([
                 path: "/",
                 Component: Home
             },
-            {
-                path: "/admin",
-                Component: Admin
-            }
         ]
+    },
+    {
+        path: "/admin",
+        Component: Admin
     },
     {
         path: "*",
