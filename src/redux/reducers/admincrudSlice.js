@@ -1,23 +1,25 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
+const northapi = "https://northwind.vercel.app/api/categories"
+
 export const getProductTrunk = createAsyncThunk("/products/admin/get", async () => {
-    const res = await axios.get("https://northwind.vercel.app/api/categories")
+    const res = await axios.get(`${northapi}`)
     return res.data
 })
 
 export const postProductThrunk = createAsyncThunk("/products/admin/post", async (data) => {
-    await axios.post("https://northwind.vercel.app/api/categories", data)
+    await axios.post(`${northapi}`, data)
     return data
 })
 
 export const deleteProductThrunk = createAsyncThunk("/products/admin/delete", async (id) => {
-    await axios.delete(`https://northwind.vercel.app/api/categories/${id}`)
+    await axios.delete(`${northapi}/${id}`)
     return id
 })
 
 export const putProductThrunk = createAsyncThunk("/products/admin/put", async ({id, data}) => {
-    await axios.put(`https://northwind.vercel.app/api/categories/${id}`, data)
+    await axios.put(`${northapi}/${id}`, data)
     return id, data
 })
 

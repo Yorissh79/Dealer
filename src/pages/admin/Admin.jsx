@@ -3,6 +3,7 @@ import style from './Admin.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { getProductTrunk, postProductThrunk } from '../../redux/reducers/admincrudSlice'
 import Card from './components/card/Card'
+import { v4 as uuidv4 } from 'uuid';
 
 const Admin = () => {
 
@@ -15,15 +16,12 @@ const Admin = () => {
   const [description, setDescription] = useState("")
 
   const send = () => {
-
-    dispatch(postProductThrunk({
-      description : description,
-      name : name
-    }))
-
-    setName("")
-    setDescription("")
-    dispatch(getProductTrunk())
+      dispatch(postProductThrunk({
+        id : uuidv4(),
+        name : name,
+        description : description
+      }))
+      dispatch(getProductTrunk())
   }
 
   useEffect(() => {

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import style from './Card.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteProductThrunk, getProductTrunk, putProductThrunk } from '../../../../redux/reducers/admincrudSlice'
+import { v4 as uuidv4 } from 'uuid';
 
 const Card = ({item}) => {
 
@@ -10,10 +11,11 @@ const Card = ({item}) => {
     const [edit, setEdit] = useState("none")
 
     const dispatch = useDispatch()
-    const data = useSelector(state => state.admincrud.data)
+    const data = useSelector(state => state.admincrud.console)
 
     const deletebtn = () => {
         dispatch(deleteProductThrunk(item.id))
+        dispatch(getProductTrunk())
     }
 
     const editbtn = () => {
@@ -25,11 +27,13 @@ const Card = ({item}) => {
         dispatch(putProductThrunk({
             id : item.id,
             data : {
+                id : uuidv4(),
                 name : name,
                 description : description
             }
         }))
         dispatch(getProductTrunk())
+        console.log(data)
     }
     
     const cancelbtn = () => {
