@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 40%;
+
+  .f {
+  }
+
+  .s {
+  }
+
+  .t {
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .edit {
+  }
+}
